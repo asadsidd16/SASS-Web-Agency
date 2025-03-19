@@ -1,8 +1,9 @@
 import { Element, Link as LinkScroll } from "react-scroll";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 border-2 border-amber-200">
+    <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-3">
       <Element name="hero">
         <div className="container">
           <div className="relative z-2 max-w-512 max-lg:max-w-388">
@@ -15,6 +16,7 @@ const Hero = () => {
               everything else
             </p>
             <LinkScroll to="features" offset={-100} spy smooth></LinkScroll>
+            <Button icon="/images/zap.svg">Try it now</Button>
           </div>
         </div>
       </Element>
